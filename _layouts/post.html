@@ -3,7 +3,7 @@ layout: default
 ---
 
 <article class="post">
-  {% if page.pinned And if page.pinned == "true" %}
+  {% if page.pinned And page.some_variable != nil And page.pinned == "true" %}
     <img src="https://i.imgur.com/G2NHsp9.png" alt="pin" height="32" width="32">
   {% endif %}
   <h1>{{ page.title }}</h1>
