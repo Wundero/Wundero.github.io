@@ -7,7 +7,7 @@ layout: default
   {% for post in tag[1] %}
     <article class="post">
 
-      <h1>{% if post.pinned And post.pinned != nil And post.pinned == "true" %}
+      <h1>{% if tag == "pinned" %}
     <img src="https://i.imgur.com/G2NHsp9.png" alt="pin" height="26" width="26">
   {% endif %}<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
