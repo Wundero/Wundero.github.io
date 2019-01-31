@@ -277,14 +277,14 @@ nav {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   background-color: $lightGray;
-  position: absolute;
+  position: relative;
   bottom: 0;
 }
 
 footer {
   padding: 20px 0;
   text-align: center;
-  position: relative;
+  position: absolute;
   bottom: 0;
 }
 
