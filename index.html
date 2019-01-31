@@ -4,7 +4,8 @@ layout: default
 
 <div class="posts">
   {% for tag in site.tags %}
-  {% for post in tag[1] %}
+  {% if tag[0] == "pinned" %}
+  {% for post in (tag[1] | sort: "date", "last") %}
     <article class="post">
 
       <h1>{% if tag[0] == "pinned" %}
@@ -18,6 +19,25 @@ layout: default
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
+  {% endif %}
+{% endfor %}
+  {% for tag in site.tags %}
+  {% if tag[0] != "pinned" %}
+  {% for post in (tag[1] | sort: "date", "last") %}
+    <article class="post">
+
+      <h1>{% if tag[0] == "pinned" %}
+    <img src="https://i.imgur.com/G2NHsp9.png" alt="pin" height="26" width="26">
+  {% endif %}<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+  {% endif %}
 {% endfor %}
   
 </div>
