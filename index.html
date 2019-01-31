@@ -22,6 +22,7 @@ layout: default
     </article>
   {% endfor %}
   {% endif %}
+  {% endfor %}
 {% for post in site.posts %}
   {% unless post.tags != empty And post.tags contains "pinned" %}
     <article class="post">
