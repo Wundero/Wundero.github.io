@@ -22,25 +22,8 @@ layout: default
     </article>
   {% endfor %}
   {% endif %}
-{% endfor %}
-  {% for tag in site.tags %}
-  {% if tag[0] != "pinned" %}
-  {% for post in (tag[1] | sort: "date", "last") %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-  {% endif %}
-{% endfor %}
 {% for post in site.posts %}
-  {% if post.tags == empty %}
+  {% unless post.tags != empty And post.tags contains "pinned" %}
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
