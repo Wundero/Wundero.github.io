@@ -235,6 +235,7 @@ nav {
 
     @include mobile {
       margin: 0 10px;
+      font-weight: bold;
       color: $lightGray;
     }
   }
