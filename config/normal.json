@@ -1,5 +1,14 @@
 [
-  "https://github.com/rojo8399/PlaceholderAPI",
-  "https://github.com/Wundero/Ray",
-  "https://github.com/Wundero/HushNow"
+  {
+    "url": "https://github.com/rojo8399/PlaceholderAPI",
+    "image": "https://i.imgur.com/971kX1Y.png"
+  },
+  {
+    "url": "https://github.com/Wundero/Ray",
+    "image": "https://i.imgur.com/PFXy5IP.png"
+  },
+  {
+    "url": "https://github.com/Wundero/HushNow",
+    "image": "https://i.imgur.com/CeYR9Me.png"
+  }
 ]
