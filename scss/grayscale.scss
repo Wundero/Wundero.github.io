@@ -7,6 +7,7 @@
 @import 'projects.scss';
 @import 'signup.scss';
 @import 'contact.scss';
+@import 'resume.scss';
 
 body {
   font-family: 'Nunito';
@@ -35,5 +36,6 @@ a {
 }
 
 footer {
+  background-color: $gray-800;
   padding: 5rem 0;
 }

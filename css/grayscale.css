@@ -89,7 +89,7 @@
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
-  background: -webkit-linear-gradient(rgba(127, 143, 166, 0.9), rgba(255, 255, 255, 0));
+  background: -webkit-linear-gradient(rgba(127, 143, 166, 0.9), rgba(255, 255, 255, 0.4));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -153,6 +153,7 @@
 
 .projects-section {
   padding: 10rem 0;
+  background: linear-gradient(to top, #343a40 5%, rgba(173, 181, 189, 0.9) 35%, rgba(218, 224, 229, 0.8) 100%);
 }
 .projects-section .featured-text {
   padding: 2rem;
@@ -199,10 +200,12 @@
 
 .contact-section {
   padding: 5rem 0 0;
+  background-color: #343a40;
 }
 .contact-section .card {
-  border: 0;
-  border-bottom: 0.25rem solid #64a19d;
+  background: #111;
+  border: 0.05rem solid;
+  border-bottom-width: 0.25rem;
 }
 .contact-section .card h4 {
   font-size: 0.8rem;
@@ -234,6 +237,15 @@
   color: #fff;
 }
 
+.resume-section {
+  background-color: #343a40;
+  background-image: url("https://i.imgur.com/p9uP8QC.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding: 5rem 0 10rem;
+}
+
 body {
   font-family: "Nunito";
   letter-spacing: 0.0625em;
@@ -260,6 +272,7 @@ a:focus, a:hover {
 }
 
 footer {
+  background-color: #343a40;
   padding: 5rem 0;
 }
 

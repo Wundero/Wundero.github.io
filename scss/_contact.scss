@@ -1,8 +1,11 @@
 .contact-section {
   padding: 5rem 0 0;
+  background-color: $gray-800;
   .card {
-    border: 0;
-    border-bottom: 0.25rem solid $primary;
+    background: $gray-1000;
+    border: 0.05rem solid;
+    border-bottom-width: 0.25rem;
+
     h4 {
       font-size: 0.8rem;
       font-family: 'Varela Round';

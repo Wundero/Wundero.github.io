@@ -56,7 +56,7 @@ function right(result, img) {
         "                <div class=\"bg-black text-center h-100 project\">\n" +
         "                    <div class=\"d-flex h-100\">\n" +
         "                        <div class=\"project-text w-100 my-auto text-center text-lg-left\">\n" +
-        "                            <a href='"+url+"'><h4 class=\"text-white\">"+name+"</h4></a>\n" +
+        "                            <a href='"+url+"' target='_blank'><h4 class=\"text-white\">"+name+"</h4></a>\n" +
         "                            <p class=\"mb-0 text-white-50\">"+description+"</p>\n" +
         "                            <hr class=\"d-none d-lg-block mb-0 ml-0\">\n" +
         "                        </div>\n" +
@@ -83,7 +83,7 @@ function left(result, img) {
         "                <div class=\"bg-black text-center h-100 project\">\n" +
         "                    <div class=\"d-flex h-100\">\n" +
         "                        <div class=\"project-text w-100 my-auto text-center text-lg-left\">\n" +
-        "                            <a href='"+url+"'><h4 class=\"text-white\">"+name+"</h4></a>\n" +
+        "                            <a href='"+url+"' target='_blank'><h4 class=\"text-white\">"+name+"</h4></a>\n" +
         "                            <p class=\"mb-0 text-white-50\">"+description+"</p>\n" +
         "                            <hr class=\"d-none d-lg-block mb-0 ml-0\">\n" +
         "                        </div>\n" +
@@ -109,7 +109,7 @@ function star(result, img) {
         "            </div>\n" +
         "            <div class=\"col-xl-4 col-lg-5\">\n" +
         "                <div class=\"featured-text text-center text-lg-left\">\n" +
-        "                    <a href='"+url+"'><h4>"+name+"</h4></a>\n" +
+        "                    <a href='"+url+"' target='_blank'><h4>"+name+"</h4></a>\n" +
         "                    <p class=\"text-black-50 mb-0\">"+description+"</p>\n" +
         "                </div>\n" +
         "            </div>\n" +
