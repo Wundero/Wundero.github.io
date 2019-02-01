@@ -63,7 +63,7 @@ function right(result) {
         "                    </div>\n" +
         "                </div>\n" +
         "            </div>\n" +
-        "        </div>");
+        "        </div>", false);
 }
 
 function left(result) {
@@ -90,7 +90,7 @@ function left(result) {
         "                    </div>\n" +
         "                </div>\n" +
         "            </div>\n" +
-        "        </div>");
+        "        </div>", false);
 }
 
 function star(result) {
@@ -113,7 +113,7 @@ function star(result) {
         "                    <p class=\"text-black-50 mb-0\">"+description+"</p>\n" +
         "                </div>\n" +
         "            </div>\n" +
-        "        </div>");
+        "        </div>", true);
 }
 
 function insert(html, starred) {
