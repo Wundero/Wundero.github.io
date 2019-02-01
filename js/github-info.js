@@ -116,6 +116,10 @@ function star(result) {
         "        </div>");
 }
 
-function insert(html) {
-    $("#projects > div").append(html)
+function insert(html, starred) {
+    var dov = $("#normal");
+    if(starred) {
+        dov = $("#starred");
+    }
+    dov.append(html)
 }
