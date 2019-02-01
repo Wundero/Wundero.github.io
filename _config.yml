@@ -2,8 +2,9 @@
 # This file contains configuration flags to customize your site
 #
 
-# Name of your site (displayed in the header)
 name: Sam Riddle
+
+title: @Wundero
 
 # Short bio or description (displayed in the header)
 description: Computer Science student at UBC.

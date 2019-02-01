@@ -1,41 +1,195 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="posts">
-  {% for tag in site.tags %}
-  {% if tag[0] == "pinned" %}
-  {% for post in (tag[1] | sort: "date", "last") %}
-    <article class="post">
+<head>
 
-      <h1>
-        <img src="https://i.imgur.com/CFtu098.png" alt="pin" height="23" width="23">
-        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}
-        </a>
-      </h1>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+    <title>{{ site.title }}</title>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-  {% endif %}
-  {% endfor %}
-{% for post in site.posts %}
-  {% unless post.tags != empty And post.tags contains "pinned" %}
-    <article class="post">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+          rel="stylesheet">
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+    <!-- Custom styles for this template -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endunless %}
-{% endfor %}
-  
-</div>
+
+    <!--<link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/favicon_package_v0.16/favicon.ico?">
+    <link rel="manifest" href="{{ site.baseurl }}/favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="{{ site.baseurl }}/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">-->
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+            crossorigin="anonymous"></script>
+    <script src="js/github-info.js"></script>
+
+
+</head>
+
+<body id="page-top">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">{{ site.name }}</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Header -->
+<header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center">
+            <h1 class="mx-auto my-0 text-uppercase">{{ site.name }}</h1>
+            <h2 class="text-white-50 mx-auto mt-2 mb-5">{{ site.description }}</h2>
+            <a href="#about" class="btn btn-primary js-scroll-trigger">More Info</a>
+        </div>
+    </div>
+</header>
+
+<!-- About Section -->
+<section id="about" class="about-section text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="text-white mb-4">About Me</h2>
+                <p class="text-white-50">My name is Sam Riddle, and I am a computer science student at the University
+                of British Columbia. I am a well-versed software developer with many years of experience, but am always
+                looking for new projects and challenges to tackle.</p>
+                <p class="text-white-50">I have been programming with Java since I was fifteen years old, and have made
+                several projects, large and small. I also have lots of experience with C, GoLang and Python, and have
+                worked with C++, C# and JavaScript as well. I have also been working as a Teaching Assistant
+                for computer science classes for over a year.</p>
+                <p class="text-white-50">I am very interested in programming and designing for lower level technologies
+                and hardware, such as operating systems, kernels, CPU and GPU design, and optimization. I also love
+                working with higher level languages, and seeing how they work under the hood.</p>
+                <p class="text-white-50">My other interests include working with physical hardware, mostly personal
+                computers; playing video games, with some degree of competitiveness; and I follow the stock market and
+                make investments, although I am not particularly good at it yet.</p>
+            </div>
+        </div>
+        <img src="img/ipad.png" class="img-fluid" alt="">
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section bg-light">
+    <div class="container">
+
+
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section bg-black">
+    <div class="container">
+
+        <div class="row">
+
+
+            <div class="col-md-4 mb-3 mb-md-0">
+                <a href="mailto:{{ site.footer-links.email }}" target="_blank">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-envelope text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Email</h4>
+                            <hr class="my-4">
+                            <div class="small text-black-50">
+                                {{ site.footer-links.email }}
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-md-4 mb-3 mb-md-0">
+                <a href="https://github.com/{{ site.footer-links.github }}" target="_blank">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fab fa-github text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">GitHub</h4>
+                            <hr class="my-4">
+                            <div class="small text-black-50">
+                                {{ site.footer-links.github }}
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-md-4 mb-3 mb-md-0">
+                <a href="https://www.twitter.com/{{ site.footer-links.twitter }}" target="_blank">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fab fa-twitter text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Twitter</h4>
+                            <hr class="my-4">
+                            <div class="small text-black-50">
+                                @{{ site.footer-links.twitter }}
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-black small text-center text-white-50">
+    <div class="container">
+        Copyright &copy; {{ site.name }} 2019
+    </div>
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="js/grayscale.min.js"></script>
+
+</body>
+
+</html>
