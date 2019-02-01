@@ -275,6 +275,10 @@ a:focus, a:hover {
   color: #3c6360;
 }
 
+.bg-gray-800 {
+  background-color: #343a40 !important;
+}
+
 .bg-black {
   background-color: #161616 !important;
 }
