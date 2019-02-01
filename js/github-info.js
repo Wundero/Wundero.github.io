@@ -48,7 +48,7 @@ function right(result, img) {
     } else {
         description += "<br/>Check the project out on GitHub!";
     }
-    insert("<div class=\"row justify-content-center no-gutters mb-5 mb-lg-0\">\n" +
+    insert("<div class=\"row justify-content-center no-gutters mb-5 mb-lg-0 noselect\">\n" +
         "            <div class=\"col-lg-6\">\n" +
         "                <img class=\"img-fluid\" src=\""+img+"\" alt=\"\">\n" +
         "            </div>\n" +
@@ -75,7 +75,7 @@ function left(result, img) {
     } else {
         description += "<br/>Check the project out on GitHub!";
     }
-    insert("<div class=\"row justify-content-center no-gutters mb-5 mb-lg-0\">\n" +
+    insert("<div class=\"row justify-content-center no-gutters mb-5 mb-lg-0 noselect\">\n" +
         "            <div class=\"col-lg-6\">\n" +
         "                <img class=\"img-fluid\" src=\""+img+"\" alt=\"\">\n" +
         "            </div>\n" +
@@ -103,14 +103,14 @@ function star(result, img) {
     } else {
         description += "<br/>Check the project out on GitHub!";
     }
-    insert("<div class=\"row align-items-center no-gutters mb-4 mb-lg-5\">\n" +
+    insert("<div class=\"row align-items-center no-gutters mb-4 mb-lg-5 noselect\">\n" +
         "            <div class=\"col-xl-8 col-lg-7\">\n" +
         "                <img class=\"img-fluid mb-3 mb-lg-0\" src=\""+img+"\" alt=\"\">\n" +
         "            </div>\n" +
         "            <div class=\"col-xl-4 col-lg-5\">\n" +
         "                <div class=\"featured-text text-center text-lg-left\">\n" +
         "                    <a href='"+url+"' target='_blank'><h4>"+name+"</h4></a>\n" +
-        "                    <p class=\"text-black-50 mb-0\">"+description+"</p>\n" +
+        "                    <p class=\"text-black-50 mb-0 \">"+description+"</p>\n" +
         "                </div>\n" +
         "            </div>\n" +
         "        </div>", true);
