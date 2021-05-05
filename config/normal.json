@@ -1,11 +1,12 @@
 [
   {
-    "url": "https://github.com/rojo8399/PlaceholderAPI",
-    "image": "https://i.imgur.com/971kX1Y.png"
-  },
-  {
     "url": "https://github.com/Wundero/Ray",
     "image": "https://i.imgur.com/PFXy5IP.png"
+  },
+  {
+    "name": "MiniOS Operating System",
+    "description": "Bare-bones operating system for x86 IA32 cpus",
+    "image": "https://i.imgur.com/pHCyiZf.png"
   },
   {
     "url": "https://github.com/Wundero/HushNow",
